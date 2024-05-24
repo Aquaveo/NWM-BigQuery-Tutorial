@@ -119,7 +119,8 @@ Modify the icon property of your app class to reference the new image. Also chan
 5. View Your New App
 ---------------------
 Start up the development server to view the new app by running this command:
-.. code-block :: bash
+
+.. code-block:: bash
 
     tethys manage start
 
