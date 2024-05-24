@@ -89,32 +89,22 @@ Modify the icon property of your app class to reference the new image. Also chan
 
 .. code-block:: python
 
-    class NwmBigqueryApp(TethysAppBase):
-    """
-    Tethys app class for NWM BigQuery App.
-    """
+    class NwmBigqueryTutorial(TethysAppBase):
+        """
+        Tethys app class for NWM BigQuery Tutorial.
+        """
 
-    name = 'NWM BigQuery App'
-    description = 'An application that allows users to query data from the National Water Modelyze the data returned'
-    package = 'nwm_bigquery_app'  # WARNING: Do not change this value
-    index = 'home'
-    icon = f'{package}/images/icon.gif'
-    root_url = 'nwm-bigquery-app'
-    color = '#5CA4FD'
-    tags = '"Hydrology", "CIROH"'
-    enable_feedback = False
-    feedback_emails = []
+        name = 'NWM BigQuery Tutorial'
+        description = 'Tutorial for an application that allows users to query data from the National Water Model and visualize the results.'
+        package = 'nwm_bigquery_tutorial'  # WARNING: Do not change this value
+        index = 'home'
+        icon = f'{package}/images/NWM_app_icon.png'
+        root_url = 'nwm-bigquery-tutorial'
+        color = '#5CA4FD'
+        tags = ''
+        enable_feedback = False
+        feedback_emails = []
 
-    def custom_settings(self):
-        custom_settings = (
-            CustomSetting(
-                name='project_id',
-                type=CustomSetting.TYPE_STRING,
-                description='Google Cloud Project ID',
-                required=True
-            ),
-        )
-        return custom_settings
 
 5. View Your New App
 ---------------------
