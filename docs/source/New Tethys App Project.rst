@@ -127,4 +127,12 @@ Verify the following:
 
 6. Solution 
 ------------
-This concludes the New App Project portion of the NWM BigQuery Tutorial. You can view the solution on GitHub NEEDS GITHUB INFO here
+This concludes the New App Project portion of the NWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-1-Complete or clone it as follows:
+
+.. code-block:: bash
+
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-1-Complete 
+
+    
