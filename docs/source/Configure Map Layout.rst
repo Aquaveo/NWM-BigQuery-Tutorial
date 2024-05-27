@@ -10,8 +10,13 @@ MapLayout,  see `Map Layout <https://docs.tethysplatform.org/en/stable/tethys_sd
 
 0. Start From Previous Solution (Optional)
 -------------------------------------------
-If you wish to use the previous solution as a starting point, do the following:
-GIT INSTRUCTIONS here
+If you wish to use the previous solution as a starting point:
+
+.. code-block:: bash
+    
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-1-Complete
 
 1. Swap Default Home Controller with MapLayout
 ----------------------------------------------
@@ -43,4 +48,10 @@ We'll learn how to further customize the MapLayout and add National Water Model 
 
 2. Solution
 ------------
-This conclues the Configure MapLayout portion of the NWM BigQuery Tutorial. You can view the solution on github: ADD GITHUB INSTRUCTIONS here
+This conclues the Configure MapLayout portion of the NWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-2-Complete or clone it as follows:
+
+.. code-block:: bash
+
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-2-Complete 
