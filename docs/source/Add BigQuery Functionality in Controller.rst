@@ -5,7 +5,13 @@ updating the controller to receive and begin processing that input
 
 0. Start From Solution (Optional)
 ---------------------------------
-GIT INFO HERE
+If you wish to use the previous solution as a starting point:
+
+.. code-block:: bash
+    
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-6-Complete
 
 1. Add POST Endpoint to Controller
 -----------------------------------
@@ -235,7 +241,13 @@ Now open your console and you'll find the query results. In the next steps of th
 
 5. Solution
 -----------
-This concludes the Add BigQuery Functionality in Controller portion of the tutorial. 
+This concludes the Add BigQuery Functionality in Controller portion of the NWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-7-Complete or clone it as follows:
+
+.. code-block:: bash
+
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-7-Complete 
 GIT INFO HERE
 
 

@@ -4,7 +4,13 @@ In this portion of the tutorial, you'll learn how to visualize data on graph in 
 
 0. Solution
 -----------
-GIT INSTRUCTIONS HERE
+If you wish to use the previous solution as a starting point:
+
+.. code-block:: bash
+    
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-8-Complete
 
 1. Plot Slide
 -------------
@@ -83,7 +89,10 @@ As you can see, our data is displaying on the graph, with groups on the right si
 
 3. Solution
 -----------
-This concludes the Displaying Graph Data portion of this tutorial. 
-GIT INSTRUCTIONS HERE
+This concludes the Displaying Graph Data portion of the NWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-9-Complete or clone it as follows:
 
+.. code-block:: bash
 
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-9-Complete 

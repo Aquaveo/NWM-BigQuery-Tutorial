@@ -4,7 +4,13 @@ This section of the tutorial explains how to add custom settings to a Tethys app
 
 0. Start From Solution
 -----------------------
-GIT INFORMATION HERE
+If you wish to use the previous solution as a starting point:
+
+.. code-block:: bash
+    
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-5-Complete
 
 1. Import Custom settings
 -------------------------
@@ -67,6 +73,13 @@ We'll get into how to access this custom setting's value in the next portion of 
 
 4. Solution
 -----------
-This concludes the section on adding custom settings to a Tethys application.
-GIT INFO HERE
+This concludes the Add Custom Google Project ID Setting to Application section of the tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-6-Complete or clone it as follows:
+
+.. code-block:: bash
+
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-6-Complete 
+
+
 

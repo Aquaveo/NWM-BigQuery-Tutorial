@@ -9,7 +9,12 @@ we’ll go over placing them in our page by extending a template.
 0. Start From Previous Solution (Optional)
 ------------------------------------------
 If you wish to use previous solution as a starting point:
-GIT INSTRUCTIONS HERE
+
+.. code-block:: bash
+    
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-3-Complete
 
 1. Import Necessary Gizmos
 --------------------------
@@ -211,8 +216,13 @@ Let's check our application once more! Reload the page, and click on the query t
 
 4. Solution
 -----------
-This concludes the Add Query Fields portion of the NWM BigQuery Tutorial. 
-GIT INFORMATION HERE
+This concludes the Add Query Fields portion of the NWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-4-Complete or clone it as follows:
+
+.. code-block:: bash
+
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-4-Complete 
 
 
 

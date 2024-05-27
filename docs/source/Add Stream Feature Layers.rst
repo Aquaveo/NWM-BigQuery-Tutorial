@@ -105,7 +105,7 @@ we'll be adding a new panel to that area with our query input fields.
 
 2. Solution
 -----------
-This concludes the Add Stream Feature Layers portion of the nWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-3-Complete or clone it as follows:
+This concludes the Add Stream Feature Layers portion of the NWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-3-Complete or clone it as follows:
 
 .. code-block:: bash
 

@@ -4,8 +4,13 @@ In this portion of the tutorial, we'll add form functionality to our query field
 
 0. Start From Previous Solution (Optional)
 ------------------------------------------
-If you wish to use the previous soltuion as a starting point:
-GIT INSTRUCTIONS HERE
+If you wish to use the previous solution as a starting point:
+
+.. code-block:: bash
+    
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-4-Complete
 
 1. Dynamic Changes in the Query Form
 ------------------------------------
@@ -87,7 +92,12 @@ that the forecast offset is changing as expected.
 
 3. Solution
 -----------
-This concludes the Form Functionality in javascript portion of the tutorial.
-GIT INFORMATION HERE
+This concludes the Add Form Functionality in javascript portion of the NWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-5-Complete or clone it as follows:
+
+.. code-block:: bash
+
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-5-Complete 
 
 

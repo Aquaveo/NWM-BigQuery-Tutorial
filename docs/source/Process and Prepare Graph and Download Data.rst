@@ -4,7 +4,13 @@ In this section of the tutorial, you'll be learning how to process your query re
 
 0. Solution
 -----------
-GIT INFO HERE
+If you wish to use the previous solution as a starting point:
+
+.. code-block:: bash
+    
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-7-Complete
 
 1. Graph Data Preparation
 -------------------------
@@ -146,7 +152,13 @@ Now, go back to your application and run a query to see the results of our graph
     
 4. Solution
 -----------
-This concludes the Process and Prepare Graph and Download Data portion of the tutorial. ADD GIT INSTRUCTIONS HERE
+This concludes the Process and Prepare Graph and Download Data portion of the tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-8-Complete or clone it as follows:
+
+.. code-block:: bash
+
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-8-Complete 
 
 
 
