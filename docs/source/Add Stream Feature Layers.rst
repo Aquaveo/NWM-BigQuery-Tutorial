@@ -6,7 +6,14 @@ In this section of the tutorial you will learn how to visualize ARCGIS data in y
 
 0. Start from Previous Solution (Optional)
 ------------------------------------------
-GIT INSTRUCTIONS HERE
+If you wish to use the previous solution as a starting point:
+
+.. code-block:: bash
+    
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-2-Complete
+
 
 1. Override compose_layers method of MapLayout
 ----------------------------------------------
@@ -98,4 +105,10 @@ we'll be adding a new panel to that area with our query input fields.
 
 2. Solution
 -----------
-GIT INSTRUCTIONS HERE
+This concludes the Add Stream Feature Layers portion of the nWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-3-Complete or clone it as follows:
+
+.. code-block:: bash
+
+    git clone https://github.com/Aquaveo/tethys-bigquery.git
+    cd tethysapp-nwm_bigquery_tutorial
+    git checkout Step-3-Complete 
