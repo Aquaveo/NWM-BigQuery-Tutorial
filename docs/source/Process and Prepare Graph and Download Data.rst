@@ -2,7 +2,7 @@ Process and Prepare Graph and Download Data
 ===========================================
 In this section of the tutorial, you'll be learning how to process your query results and prepare the data for graphing and displaying.
 
-0. Solution
+0. Start from Previous Solution (Optional)
 -----------
 If you wish to use the previous solution as a starting point:
 

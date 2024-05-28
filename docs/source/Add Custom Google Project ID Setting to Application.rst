@@ -2,7 +2,7 @@ Add Custom Google Project ID Setting to Application
 ===================================================
 This section of the tutorial explains how to add custom settings to a Tethys application.
 
-0. Start From Solution
+0. Start from Previous Solution (Optional)
 -----------------------
 If you wish to use the previous solution as a starting point:
 

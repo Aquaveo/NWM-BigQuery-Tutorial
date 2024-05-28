@@ -3,7 +3,7 @@ Add BigQuery Functionality in Controller
 In this section of the tutorial, you'll be adding a request to your javascript code to send the form input to your controller and 
 updating the controller to receive and begin processing that input
 
-0. Start From Solution (Optional)
+0. Start from Previous Solution (Optional)
 ---------------------------------
 If you wish to use the previous solution as a starting point:
 
@@ -248,7 +248,6 @@ This concludes the Add BigQuery Functionality in Controller portion of the NWM B
     git clone https://github.com/Aquaveo/tethys-bigquery.git
     cd tethysapp-nwm_bigquery_tutorial
     git checkout Step-7-Complete 
-GIT INFO HERE
 
 
 

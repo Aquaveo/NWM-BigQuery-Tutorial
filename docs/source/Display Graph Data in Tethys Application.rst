@@ -2,7 +2,7 @@ Display Graph Data in Tethys application
 ========================================
 In this portion of the tutorial, you'll learn how to visualize data on graph in a Tethys application.
 
-0. Solution
+0. Start from Previous Solution (Optional)
 -----------
 If you wish to use the previous solution as a starting point:
 
