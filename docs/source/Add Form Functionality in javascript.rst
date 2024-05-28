@@ -50,7 +50,7 @@ Finally, we'll be adding a form submission listener. Add this code to our window
        
         // Check if all required fields are filled in
         const requiredFields = ['reach_id', 'start_date', 'start_time', 'end_date', 'end_time', 'table', 'variable'];
-        const missingFields = requiredFields.filter(field => !formData.has(field));
+        const missingFields = requiredFields.filter(field => !formData.get(field));
         if (missingFields.length > 0) {
             TETHYS_APP_BASE.alert("danger", "Make sure to fill in all required fields.");
             return;
@@ -70,7 +70,7 @@ We can test and confirm the user’s input by displaying the inputs to the conso
        
         // Check if all required fields are filled in
         const requiredFields = ['reach_id', 'start_date', 'start_time', 'end_date', 'end_time', 'table', 'variable'];
-        const missingFields = requiredFields.filter(field => !formData.has(field));
+        const missingFields = requiredFields.filter(field => !formData.get(field));
         if (missingFields.length > 0) {
             TETHYS_APP_BASE.alert("danger", "Make sure to fill in all required fields.");
             return;
