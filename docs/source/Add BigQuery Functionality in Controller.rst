@@ -42,7 +42,7 @@ Now we need to make an actual request to our new endpoint. We'll do this within 
 
 .. code-block:: javascript
 
-    document.getElementById('query-form').addEventListener('submit', function(event) {
+    $("#query-form").on("submit", function(event) {
         event.preventDefault();
         var formData = new FormData(this);
        

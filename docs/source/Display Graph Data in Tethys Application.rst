@@ -32,7 +32,7 @@ Next, we'll test making this plot slide visible. First, open main.js. We'll add 
 
 .. code-block:: javascript
     
-    document.getElementById('query-form').addEventListener('submit', function(event) {
+    $("#query-form").on("submit", function(event) {
         event.preventDefault();
         var formData = new FormData(this);
        

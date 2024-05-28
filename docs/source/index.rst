@@ -25,6 +25,8 @@ Outline
    Process and Prepare Graph and Download Data
    Display Graph Data in Tethys Application
    Error Handling and Add Graph Loading Animation
+   Add Click and Hover Detection on Stream features
+   Download Query Results
 
 .. toctree::
    :maxdepth: 2

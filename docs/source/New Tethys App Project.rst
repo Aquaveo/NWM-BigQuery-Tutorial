@@ -30,7 +30,7 @@ To generate a new Tethys app using the scaffold, open a terminal and execute the
 .. code-block:: bash
 
     # Scaffold a new Tethys app
-    tethys scaffold tethysapp-nwm_bigquery_tutorial
+    tethys scaffold nwm_bigquery_tutorial
 
 
 2. Add App Dependencies to install.yml File
@@ -135,4 +135,3 @@ This concludes the New App Project portion of the NWM BigQuery Tutorial. You can
     cd tethysapp-nwm_bigquery_tutorial
     git checkout Step-1-Complete 
 
-    

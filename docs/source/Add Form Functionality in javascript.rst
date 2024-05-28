@@ -44,7 +44,7 @@ Finally, we'll be adding a form submission listener. Add this code to our window
 
 .. code-block:: javascript
 
-    document.getElementById('query-form').addEventListener('submit', function(event) {
+    $("#query-form").on("submit", function(event) {
         event.preventDefault();
         var formData = new FormData(this);
        
@@ -64,7 +64,7 @@ We can test and confirm the user’s input by displaying the inputs to the conso
 
 .. code-block:: javascript
 
-    document.getElementById('query-form').addEventListener('submit', function(event) {
+    $("#query-form").on("submit", function(event) {
         event.preventDefault();
         var formData = new FormData(this);
        
