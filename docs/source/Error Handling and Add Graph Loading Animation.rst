@@ -71,7 +71,7 @@ This error is easier to test, try using these query parameters and run the query
 -------------------------
 Next, we'll add a loading animation to the graph when the data is being loaded. This will provide a visual cue that the data is being loaded.
 
-First, download this animation `GIF` ADD DOWNLOAD HERE or select any image or GIF you'd like and save it to 
+First, download this animation gif :download:`here <images/graph_loading_gif.gif>` or select any image or GIF you'd like and save it to 
 the `tethysapp/nwm_bigquery_tutorial/public/images` directory.
 
 Next, add this code to your main.js file within your form submit event listener:
