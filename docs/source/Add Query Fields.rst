@@ -121,6 +121,12 @@ First, let’s add our home template to our controller: This will allow us to ma
         template_name = 'nwm_bigquery_tutorial/home.html' # Add this
         map_title = 'National Water Model BigQuery Tutorial'
         map_subtitle = 'NWM Big Query Outputs'
+        basemaps = [
+            'OpenStreetMap',
+            'ESRI',
+            'Stamen',
+            {'Stamen': {'layer': 'toner', 'control_label': 'Black and White'}},
+        ]
 
 Now, let's prepare our home.html file. We're going to remove most of the contents of the file until we're left with this:
 

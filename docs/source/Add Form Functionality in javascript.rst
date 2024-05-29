@@ -32,7 +32,6 @@ the window.onload portion makes sure that this code only runs once the window is
     
     window.onload = function() {
         $("#table").on("change", function() {
-            console.log("Hi");
             var table = $("#table").val();
             $("#forecast_offset").val(forecastOffsets[table]);
         });

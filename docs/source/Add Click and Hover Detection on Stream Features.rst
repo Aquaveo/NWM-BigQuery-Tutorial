@@ -35,7 +35,7 @@ Next, add these lines to the top of your `main.js` file:
 Next, you'll add click detection to the stream features on the map. This will allow you to highlight the selected stream and add the 
 selected stream's reach id to the reach ID input field in the query parameters form.
 
-To prepare to add click detection, we'll need to access the map itself, so we'll add a map variable at the beginning of our window.onload function in our `main.js` file.
+To prepare to add click detection, we'll need to access the map itself, so we'll add a map variable in our window.onload function in our `main.js` file.
 
 .. code-block:: javascript
 
@@ -46,9 +46,14 @@ Next, we'll add a click event listener to the map also in the window.onload func
 
 .. code-block:: javascript 
     
-    map.on('click', function() {
-        console.log("Map clicked");
-     })
+    window.onload = function() {
+    $("#table").on("change", function() {
+        var table = $("#table").val();
+        $("#forecast_offset").val(forecastOffsets[table]);
+    });
+
+    var map = TETHYS_MAP_VIEW.getMap();
+    console.log(map);
 
 For now, this listener just displays "map clicked" so we can test that your click detection is working. Go ahead and test it out!
 
