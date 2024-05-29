@@ -87,7 +87,7 @@ To begin, replace controller.py with the following:
 
             return layer_groups
 
-In each of our layers, you can notice and add/change these attributes:
+In each of our layers, you can add/change these attributes:
 
 * **layer_name:** A unique identifier for this layer, important for identifying the layer later in other parts of the code.
 * **layer_title:** What the layer should be titled (i.e. displayed as) in the left Layers panel of the application

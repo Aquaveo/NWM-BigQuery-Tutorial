@@ -91,7 +91,7 @@ To prepare to run queries, we need to add a few more imports. Add these to your 
 
     from .app import NwmBigqueryTutorial as app
 
-You should've created a BigQuery account and have a service account key, but if not follow these steps here: ADD LINK HERE 
+You should've created a BigQuery account and have a service account key, but if not follow these steps here: :download:`BigQuery Account/Private Key Setup Instructions<files/BigQuery Account Creation and API Private Key Setup Instructions.pdf>`
 
 We'll need to use the `os` library to setup our environment. Add the following code between your imports and your `NWMBigQueryMap` class 
 in `controllers.py`. Replace the name of the service account key with the name of your service account key json filename

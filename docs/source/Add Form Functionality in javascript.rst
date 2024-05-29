@@ -16,7 +16,7 @@ If you wish to use the previous solution as a starting point:
 ------------------------------------
 Begin by opening `public/js/main.js`
 
-As part of your queries, you'll need to have a forecast offset. This number will need to change according to what table you're querying, 
+As part of your queries, you'll need to include a forecast offset. This number will need to change according to what table you're querying, 
 so we'll need to add a way to change this number dynamically.
 
 Setup for forecast offset dynamic changes by adding this code:
