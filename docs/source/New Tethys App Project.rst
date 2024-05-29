@@ -84,7 +84,7 @@ change into the tethysapp-nwm_bigquery_tutorial directory and execute the tethys
 
 4. Customize App Icon and Theme Color
 -------------------------------------
-Download this :download:`NWM app icon <../images/NWM_app_icon.png>` image or find one that you like and save it to the public/images directory. 
+Download this :download:`NWM app icon <images/NWM_app_icon.png>` image or find one that you like and save it to the public/images directory. 
 Modify the icon property of your app class to reference the new image. Also change the color property to the #5cA4FD color or whatever color you'd like:
 
 .. code-block:: python
