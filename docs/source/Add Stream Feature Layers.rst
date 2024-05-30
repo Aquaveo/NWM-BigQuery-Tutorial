@@ -44,31 +44,37 @@ To begin, replace controller.py with the following:
 
         def compose_layers(self, request, map_view, app_workspace, *args, **kwargs):
             # Streamflow layer
-            streamflow_layer = self.build_arc_gis_layer(endpoint='https://mapservices.weather.noaa.gov/vector/rest/services/obs/NWM_Stream_Analysis/MapServer',
-                                                                layer_id = "streamflow",
-                                                                layer_name = "0",
-                                                                layer_title = "Streamflow",
-                                                                layer_variable="streamflow",
-                                                                visible=True,
-                                                                selectable=True)
+            streamflow_layer = self.build_arc_gis_layer(
+                endpoint='https://mapservices.weather.noaa.gov/vector/rest/services/obs/NWM_Stream_Analysis/MapServer',
+                layer_id = "streamflow",
+                layer_name = "0",
+                layer_title = "Streamflow",
+                layer_variable="streamflow",
+                visible=True,
+                selectable=True
+            )
         
             # Local layer
-            local_layer = self.build_arc_gis_layer(endpoint='https://mapservices.weather.noaa.gov/vector/rest/services/obs/NWM_Stream_Analysis/MapServer',
-                                                            layer_id = "local",
-                                                            layer_name = "7",
-                                                            layer_title = "Local",
-                                                            layer_variable="local",
-                                                            visible=True,
-                                                            selectable=True)
-        
+            local_layer = self.build_arc_gis_layer(
+                endpoint='https://mapservices.weather.noaa.gov/vector/rest/services/obs/NWM_Stream_Analysis/MapServer',
+                layer_id = "local",
+                layer_name = "7",
+                layer_title = "Local",
+                layer_variable="local",
+                visible=True,
+                selectable=True
+            )
+
             # Anomaly layer
-            anomaly_layer = self.build_arc_gis_layer(endpoint='https://mapservices.weather.noaa.gov/vector/rest/services/obs/NWM_Stream_Analysis/MapServer',
-                                                            layer_id = "anomaly",
-                                                            layer_name = "14",
-                                                            layer_title = "Anomaly",
-                                                            layer_variable="anomaly",
-                                                            visible=True,
-                                                            selectable=True)
+            anomaly_layer = self.build_arc_gis_layer(
+                endpoint='https://mapservices.weather.noaa.gov/vector/rest/services/obs/NWM_Stream_Analysis/MapServer',
+                layer_id = "anomaly", 
+                layer_name = "14", 
+                layer_title = "Anomaly", 
+                layer_variable="anomaly", 
+                visible=True,
+                selectable=True
+            )
 
             # Add layers to map
             map_view.layers.append(streamflow_layer)
