@@ -25,7 +25,7 @@ backend logic for the home screen of your app. It is of course possible to add a
 using Tethys Gizmos, but since we know we want a single-page web mapping application with common web mapping 
 features, we can instead configure the Tethys Map Layout. 
 
-This can be done by replacing the entire controller.py with the following code:
+This can be done by replacing the entire controllers.py with the following code:
 
 .. code-block:: python
 

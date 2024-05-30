@@ -74,7 +74,7 @@ Open the console and you should see the results displayed with all of your input
  
 Now that we’ve got our form submission and receiving working, we need to run our queries. 
 
-To prepare to run queries, we need to add a few more imports. Add these to your imported modules in controller.py:
+To prepare to run queries, we need to add a few more imports. Add these to your imported modules in `controllers.py`:
 
 .. code-block:: python
 

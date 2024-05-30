@@ -21,7 +21,7 @@ Adding data to the map you created in the last section using the Tethys Map Layo
 you are required to override the compose_layers function, copying its expected signatures(ie: arguments) and returning
 a list of layer groups.For this tutorial, we’ll be using only ARCGIS layers. 
 
-To begin, replace controller.py with the following: 
+To begin, replace `controllers.py` with the following: 
 
 .. code-block:: python
 
