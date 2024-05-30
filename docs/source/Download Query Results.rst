@@ -3,6 +3,7 @@ Download Query Results
 In this section of the tutorial, you'll learn how to add the capability to download query results in the form of CSV files.
 
 0. Start from Previous Solution (Optional)
+-------------------------------------------
 If you wish to use the previous solution as a starting point:
 
 .. code-blocK:: bash
@@ -32,7 +33,7 @@ Go ahead and add these variables at the top of your `app.js` file:
 
 These other variables are going to be used to populate or label your data in the csv files.
 
-2. Add Download Button Click listener
+2. Add Download Button Click Listener
 -------------------------------------
 Next, you'll need to add a click listener to the download button in `home.js` within our main function:
 
