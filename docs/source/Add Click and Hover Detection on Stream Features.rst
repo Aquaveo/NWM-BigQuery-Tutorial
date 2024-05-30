@@ -240,7 +240,7 @@ Next, we'll add code to get the clicked on stream feature. First, we'll need som
 Next, we'll need to add code to our map click event listener:
 
 .. code-block:: javascript
-    
+
     map.on('click', function(evt) {
         const pixel = map.getEventPixel(evt.originalEvent);
         let features = [];
@@ -302,8 +302,10 @@ Next, we'll need to add code to our map click event listener:
         
     });
 
-Let's go over what this function is doing really quickly. 
+Let's go over what this function is doing: 
+
 First, it finds the location of the click on the map.
+
 It then makes a request for information on the specific reach the user has 
 clicked on, and uses that information to create a new layer that you see as the yellow 
 highlight with red dots at the end just like in the screenshot above.
@@ -313,12 +315,13 @@ Now that we've got the code prepared, let's test it out! Refresh the application
 3. Setup for Hover Detection
 -----------------------------
 Our last step in this portion of the tutorial involves hover detection. We'll be adding hover detection for these
- highlighted reaches so that when the user hovers over a selected reach, the reach id and name will pop up in a 
- built in little info box above the reach.
+highlighted reaches so that when the user hovers over a selected reach, the reach id and name will pop up in a 
+built in little info box above the reach.
 
 First, we need to setup this info box. Add the following code to your `NWMBigQueryMap` class in `controllers.py`:
 
 .. code-block:: python
+    
     @controller(name="home", app_workspace=True)
     class NWMBigQueryMap(MapLayout):
         app = app
