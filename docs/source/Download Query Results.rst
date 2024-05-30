@@ -125,7 +125,7 @@ We'll also want any reach selections to update the query_run variable:
 
 Now all that's left is to test the download button. Run any query you'd like, then press the download button after your results appear on the graph. 
 
-You should get a zip file download with all the CSV files that were generated from the query results corresponding to each available ensemble and min and max values.
+You should get a zip file download with all the CSV files that were generated from the query results corresponding to each available ensemble and minimum and maximum values.
 
 3. Solution
 ------------

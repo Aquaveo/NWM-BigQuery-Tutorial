@@ -1,4 +1,4 @@
-Add Click and Hover Detection on Stream features
+Add Click and Hover Detection on Stream Features
 ================================================
 
 .. image:: images/highlighted_reach_screenshot.png
@@ -29,6 +29,8 @@ First, we'll need to add a few imports. To begin, add the following code to `hom
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     {% endblock %}
 
+2. Add Click Detection
+-----------------------
 Next, you'll add click detection to the stream features on the map. This will allow you to highlight the selected stream and add the 
 selected stream's reach id to the reach ID input field in the query parameters form.
 
@@ -57,13 +59,13 @@ Next, we'll add a click event listener to the map also in the window.onload func
         var map = TETHYS_MAP_VIEW.getMap();
         
         map.on('click', function(evt) {
-        console.log("Map clicked");
+            console.log("Map clicked");
         });
 
 
 For now, this listener just displays "map clicked" so we can test that your click detection is working. Go ahead and test it out!
 
-2. Get Clicked on Stream Feature
+3. Get Clicked on Stream Feature
 ---------------------------------
 Next, we'll add code to get the clicked on stream feature. First, we'll need some helper functions. We won't go into too much detail on how each of these work, so go ahead and add this code to your `app.js` file:
 
@@ -312,8 +314,8 @@ highlight with red dots at the end just like in the screenshot above.
 
 Now that we've got the code prepared, let's test it out! Refresh the application and click on any stream on the map. The map should zoom in on the selected stream and highlight over the specific reach you clicked inside of with yellow. The reach's ID should also be in the reach ID query input field. 
 
-3. Setup for Hover Detection
------------------------------
+4. Setup Overlay
+----------------
 Our last step in this portion of the tutorial involves hover detection. We'll be adding hover detection for these
 highlighted reaches so that when the user hovers over a selected reach, the reach id and name will pop up in a 
 built in little info box above the reach.
@@ -321,7 +323,7 @@ built in little info box above the reach.
 First, we need to setup this info box. Add the following code to your `NWMBigQueryMap` class in `controllers.py`:
 
 .. code-block:: python
-    
+
     @controller(name="home", app_workspace=True)
     class NWMBigQueryMap(MapLayout):
         app = app
@@ -382,13 +384,15 @@ Then, add this code within our main function:
             }
         })
 
-        closer.onclick = function() {
+        closer.on("click", function() {
             overlay.setPosition(undefined);
             closer.blur();
             return false;
-        };
+        })
     map.addOverlay(overlay);
 
+5. Add Hover Detection
+-----------------------
 Next, we'll add our hover detection code: Add this code close to the end of the processStreamServiceQueryResult function:
 
 .. code-block:: javascript
@@ -446,7 +450,7 @@ Add these lines of code:
         overlay.setPosition(undefined);
         closer.blur();
         return false;
-     };   
+    });
 
 
 .. code-block:: javascript
@@ -460,7 +464,7 @@ Add these lines of code:
 Ok, let's test it! Refresh the application and select a reach. The reach's ID and name should pop up in the info box above the reach 
 after you hover over the highlighted reach just like in the screenshot above.
 
-4. Solution
+6. Solution
 -----------
 This concludes the Add click and Hover Detection on Stream Features section of the NWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-11-Complete or clone it as follows:
 
