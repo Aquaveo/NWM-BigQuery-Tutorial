@@ -240,6 +240,7 @@ Next, we'll add code to get the clicked on stream feature. First, we'll need som
 Next, we'll need to add code to our map click event listener:
 
 .. code-block:: javascript
+    
     map.on('click', function(evt) {
         const pixel = map.getEventPixel(evt.originalEvent);
         let features = [];
