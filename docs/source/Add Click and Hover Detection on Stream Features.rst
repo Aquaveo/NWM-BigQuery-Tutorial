@@ -24,11 +24,10 @@ First, we'll need to add a few imports. To begin, add the following code to `hom
 .. code-block:: html
 
     {% block scripts %}
-  {{ block.super }}
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script type = "module" src="{% static 'nwm_bigquery_tutorial/js/app.js' %}"></script>
-
-{% endblock %}
+        {{ block.super }}
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type = "module" src="{% static 'nwm_bigquery_tutorial/js/app.js' %}"></script>
+    {% endblock %}
 
 Next, add these imports to the top of your `app.js` file:
 
