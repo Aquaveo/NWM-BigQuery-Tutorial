@@ -24,10 +24,19 @@ First, we'll need to add a few imports. To begin, add the following code to `hom
 .. code-block:: html
 
     {% block scripts %}
-        <script type = "module" src="{% static 'nwm_bigquery_tutorial/js/imports.js' %}"></script>
-        {{ block.super }}
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    {% endblock %}
+  {{ block.super }}
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type = "module" src="{% static 'nwm_bigquery_tutorial/js/app.js' %}"></script>
+
+{% endblock %}
+
+Next, add these imports to the top of your `app.js` file:
+
+.. code-block:: javascript
+
+    import Point from "https://js.arcgis.com/4.29/@arcgis/core/geometry/Point.js";
+    import * as geometryEngine from "https://js.arcgis.com/4.29/@arcgis/core/geometry/geometryEngine.js";
+
 
 2. Add Click Detection
 -----------------------
@@ -336,8 +345,6 @@ First, we need to setup this info box. Add the following code to your `NWMBigQue
         basemaps = [
             'OpenStreetMap',
             'ESRI',
-            'Stamen',
-            {'Stamen': {'layer': 'toner', 'control_label': 'Black and White'}},
         ]
 
 Next, add this code to `home.html`

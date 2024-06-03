@@ -41,18 +41,18 @@ Next, you'll need to add a click listener to the download button in `home.js` wi
     
     $("#download-button").on("click", function() {
         if (query_run) {
-           var zip = new JSZip();
-           var folder = zip.folder(`result_data`);
+            var zip = new JSZip();
+            var folder = zip.folder(`result_data`);
         
-           for (var group_name in csvData) {
-              
-              var csvFile = csvData[group_name].map(e => e.join(",")).join("\n");
-              folder.file(`${variable_selected}_at_reach_${reach_id_selected}_${group_name}_values.csv`, csvFile);
-           }
-           zip.generateAsync({type:"blob"})
-           .then(function(content) {
-              saveAs(content, `NWM_${variable_selected}_at_reach_${reach_id_selected}_result_data.zip`)
-           });
+            for (var group_name in csvData) {
+                
+                var csvFile = csvData[group_name].map(e => e.join(",")).join("\n");
+                folder.file(`${variable_selected}_at_reach_${reach_id_selected}_${group_name}_values.csv`, csvFile);
+            }
+            zip.generateAsync({type:"blob"})
+            .then(function(content) {
+                saveAs(content, `NWM_${variable_selected}_at_reach_${reach_id_selected}_result_data.zip`)
+            });
             var blob = new Blob([csvFile], { type: 'text/csv;charset=utf-8;' });
             var link = $("<a>");
             var url = URL.createObjectURL(blob);

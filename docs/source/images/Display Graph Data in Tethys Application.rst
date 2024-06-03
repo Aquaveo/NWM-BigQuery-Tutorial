@@ -22,7 +22,7 @@ In order to work with this plot slide, we’ll need to make a quick change to ou
         map_subtitle = 'NWM Big Query Outputs'
         plot_slide_sheet = True # Add this line
 
-Next, we'll test making this plot slide visible. First, open main.js. We'll add just two lines of code here:
+Next, we'll test making this plot slide visible. First, open `app.js` We'll add just two lines of code here:
 
 .. code-block:: javascript
     
@@ -61,7 +61,7 @@ We can now test our plot slide: go to your application and refresh, run a query,
 2. Display Graph Data
 ---------------------
 Now that we’ve got our plot slide displaying, we need to populate our graph with data. 
-We’ll need to add onto our fetch request to do this, so change these lines in the fetch request in `main.js`:
+We’ll need to add onto our fetch request to do this, so change these lines in the fetch request in `app.js`:
 
 .. code-block:: javascript
     

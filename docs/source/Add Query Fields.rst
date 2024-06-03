@@ -124,8 +124,6 @@ First, let’s add our home template to our controller: This will allow us to ma
         basemaps = [
             'OpenStreetMap',
             'ESRI',
-            'Stamen',
-            {'Stamen': {'layer': 'toner', 'control_label': 'Black and White'}},
         ]
 
 Now, let's prepare our home.html file. We're going to remove most of the contents of the file until we're left with this:

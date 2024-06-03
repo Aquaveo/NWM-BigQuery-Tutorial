@@ -42,8 +42,6 @@ This can be done by replacing the entire `controllers.py` with the following cod
         basemaps = [
             'OpenStreetMap',
             'ESRI',
-            'Stamen',
-            {'Stamen': {'layer': 'toner', 'control_label': 'Black and White'}},
         ]
         
 And that's it! Check your app in the browser (http://localhost:8000/apps/nwm-bigquery-tutorial/). Refresh if needed, and confirm the change. It shoud look like the screenshot at the top of this section.

@@ -15,7 +15,7 @@ If you wish to use the previous solution as a starting point:
 
 1. Error Handling
 ------------------
-First, we'll add some generic error handling to check for any issues in the query process. Open `main.js` and add the following 
+First, we'll add some generic error handling to check for any issues in the query process. Open `app.js` and add the following 
 code to your fetch request:
 
 .. code-block:: javascript
@@ -74,7 +74,7 @@ Next, we'll add a loading animation to the graph when the data is being loaded. 
 First, download this animation gif :download:`here <images/graph_loading_gif.gif>` or select any image or GIF you'd like and save it to 
 the `tethysapp/nwm_bigquery_tutorial/public/images` directory.
 
-Next, add this code to your main.js file within your form submit event listener:
+Next, add this code to your `app.js` file within your form submit event listener:
 
 .. code-block:: javascript
 

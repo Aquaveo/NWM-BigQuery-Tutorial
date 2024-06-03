@@ -12,15 +12,26 @@ If you wish to use the previous solution as a starting point:
     cd tethysapp-nwm_bigquery_tutorial
     git checkout Step-4-Complete
 
-1. Dynamic Changes in the Query Form
+1. Setup 
+--------
+Before we can begin working with our javascript, we'll need to include the file in our template. Go ahead and open `home.html` in the `templates` directory.
+Add the following line to the bottom of the file:
+
+.. code-block:: html
+
+    {% block scripts %}
+        {{ block.super }}
+        <script type = "module" src="{% static 'nwm_bigquery_tutorial/js/app.js' %}"></script>
+    {% endblock %}
+
+2. Dynamic Changes in the Query Form
 ------------------------------------
 Begin by creating a new file in the directory `public/js` called `app.js`. This file will contain all of our javascript code. 
-Begin by opening `public/js/app.js`
 
 As part of your queries, you'll need to include a forecast offset. This number will need to change according to what table you're querying, 
 so we'll need to add a way to change this number dynamically.
 
-Setup for forecast offset dynamic changes by adding this code:
+Setup for forecast offset dynamic changes by adding this code to 'app.js':
 
 .. code-block:: javascript
 
@@ -38,7 +49,7 @@ the $(function() { }) function portion makes sure that this code only runs once 
         });
     });
 
-2. Form Submission Listener
+3. Form Submission Listener
 ---------------------------
 Finally, we'll be adding a form submission listener. Add this code to our main function in `app.js`:
 
@@ -90,7 +101,7 @@ Refresh your web page, and open your console. After providing some input in the 
 You should see your input displayed in the console. Run a few queries with different table selections to confirm 
 that the forecast offset is changing as expected.
 
-3. Solution
+4. Solution
 -----------
 This concludes the Add Form Functionality in javascript portion of the NWM BigQuery Tutorial. You can view the solution on GitHub at https://github.com/Aquaveo/tethys-bigquery/tree/Step-5-Complete or clone it as follows:
 
