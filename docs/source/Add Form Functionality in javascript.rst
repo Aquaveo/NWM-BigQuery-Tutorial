@@ -14,7 +14,8 @@ If you wish to use the previous solution as a starting point:
 
 1. Dynamic Changes in the Query Form
 ------------------------------------
-Begin by opening `public/js/main.js`
+Begin by creating a new file in the directory `public/js` called `app.js`. This file will contain all of our javascript code. 
+Begin by opening `public/js/app.js`
 
 As part of your queries, you'll need to include a forecast offset. This number will need to change according to what table you're querying, 
 so we'll need to add a way to change this number dynamically.
@@ -26,20 +27,20 @@ Setup for forecast offset dynamic changes by adding this code:
     const forecastOffsets = {"short_range": 1, "medium_range": 3, "medium_range_no_da": 3, "long_range": 6}
 
 Then add this event listener to dynamically change the hidden forecast offset input fields’ value when the user makes a change in the table selector.
-the window.onload portion makes sure that this code only runs once the window is loaded: 
+the $(function() { }) function portion makes sure that this code only runs once the page is loaded: 
 
 .. code-block:: javascript
     
-    window.onload = function() {
+    $(function() {
         $("#table").on("change", function() {
             var table = $("#table").val();
             $("#forecast_offset").val(forecastOffsets[table]);
         });
-    }
+    });
 
-2. Form Submission listener
+2. Form Submission Listener
 ---------------------------
-Finally, we'll be adding a form submission listener. Add this code to our window.onload function:
+Finally, we'll be adding a form submission listener. Add this code to our main function in `app.js`:
 
 .. code-block:: javascript
 

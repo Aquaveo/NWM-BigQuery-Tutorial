@@ -46,7 +46,7 @@ To prepare to add click detection, we'll need to access the map itself, so we'll
 
         var map = TETHYS_MAP_VIEW.getMap();
 
-Next, we'll add a click event listener to the map also in the window.onload function
+Next, we'll add a click event listener to the map also in the main $(function() { }) function.
 
 .. code-block:: javascript 
     
@@ -360,7 +360,6 @@ Next, we'll add some code to identify to the popup info box and assign an OpenLa
 
     var lastHighlightedLayer;
 
-    var container;
     var content;
     var closer;
 
@@ -372,12 +371,12 @@ Then, add this code within our main function:
 
     $(function() {
         var map = TETHYS_MAP_VIEW.getMap();
-        container = document.getElementById('properties-popup');
-        content = document.getElementById('properties-popup-content');
-        closer = document.getElementById('properties-popup-close-btn');
+
+        content = $("#properties-popup-content");
+        closer = $("#properties-popup-close-btn");
 
         overlay = new ol.Overlay({
-            element: container,
+            element: document.getElementById('properties-popup'),
             autoPan: true,
             autoPanAnimation: {
             duration: 250
@@ -400,7 +399,7 @@ Next, we'll add our hover detection code: Add this code close to the end of the 
         map.on('pointermove', function(e) {
             map.forEachFeatureAtPixel(e.pixel, function(feature, layer) {
                 if (layer === lastHighlightedLayer) {
-                    content.innerHTML = `<p><strong>Reach ID:</strong> ${stationID}</p><p><strong>Reach Name:</strong> ${stationName}</p>`
+                    content.html(`<p><strong>Reach ID:</strong> ${stationID}</p><p><strong>Reach Name:</strong> ${stationName}</p>`);
                     var reach_line_feature = layer.getSource().getFeatures()[0]; // Get the line feature itself for coordinates
                     var coordinates = reach_line_feature.getGeometry().getCoordinates()[0]; // Get the first coordinate of the line
                     overlay.setPosition(coordinates);
@@ -433,12 +432,12 @@ Add these lines of code:
     });
 
     var map = TETHYS_MAP_VIEW.getMap();
-    container = document.getElementById('properties-popup');
-    content = document.getElementById('properties-popup-content');
-    closer = document.getElementById('properties-popup-close-btn');
+    
+    content = $("#properties-popup-content");
+    closer = $("#properties-popup-close-btn");
 
     overlay = new ol.Overlay({
-        element: container,
+        element: document.getElementById('properties-popup'),
         autoPan: true,
         autoPanAnimation: {
         duration: 250
@@ -446,7 +445,7 @@ Add these lines of code:
     })
 
     // Add these lines
-    closer.onclick = function() {
+    closer.on("click", function() {
         overlay.setPosition(undefined);
         closer.blur();
         return false;

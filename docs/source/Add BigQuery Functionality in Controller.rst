@@ -38,7 +38,7 @@ This code will be run whenever we send a POST request to the home url and will s
 
 2. Add a Fetch Request to javascript Form Submission
 ----------------------------------------------------
-Now we need to make an actual request to our new endpoint. We'll do this within our form submission portion in main.js:
+Now we need to make an actual request to our new endpoint. We'll do this within our form submission portion in `app.js`:
 
 .. code-block:: javascript
 

@@ -53,16 +53,13 @@ Next, you'll need to add a click listener to the download button in `home.js` wi
            .then(function(content) {
               saveAs(content, `NWM_${variable_selected}_at_reach_${reach_id_selected}_result_data.zip`)
            });
-              var blob = new Blob([csvFile], { type: 'text/csv;charset=utf-8;' });
-              var link = document.createElement("a");
-              var url = URL.createObjectURL(blob);
-              link.setAttribute("href", url);
-              link.setAttribute("download", `${variable_selected}_at_reach_${reach_id_selected}_${group_name}_values.csv`);
-              link.click();
-              link.remove();
-           
-           
-        
+            var blob = new Blob([csvFile], { type: 'text/csv;charset=utf-8;' });
+            var link = $("<a>");
+            var url = URL.createObjectURL(blob);
+            link.attr("href", url);
+            link.attr("download", `${variable_selected}_at_reach_${reach_id_selected}_${group_name}_values.csv`);
+            link[0].click();
+            link.remove();
         }
         else {
            TETHYS_APP_BASE.alert("danger", "Please run the query before downloading the CSV file.");
