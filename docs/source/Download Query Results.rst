@@ -80,7 +80,7 @@ Add the following code to your fetch request:
            // Add these lines:
             query_run = true;
             
-            variable_selected = formData.get('variable_choice');
+            variable_selected = formData.get('variable');
             reach_id_selected = formData.get('reach_id');
             csvData = {};
             
