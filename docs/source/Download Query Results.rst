@@ -10,7 +10,7 @@ If you wish to use the previous solution as a starting point:
         
     git clone https://github.com/Aquaveo/tethys-bigquery.git
     cd tethysapp-nwm_bigquery_tutorial
-    git checkout Step-10-Complete
+    git checkout Step-11-Complete
 
 1. Setup
 ----------
